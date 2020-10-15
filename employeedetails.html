@@ -16,22 +16,78 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/jquery-1.12.0.min.js"></script>
 <link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
 
-
+<!-- Custom Theme files -->
+<link href="css/empboot.css" type="text/css" rel="stylesheet" media="all">
+   <link href="css/emppanel1.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/font-awesome.css" rel="stylesheet">   <!-- font-awesome icons --> 
+ <link rel="stylesheet" href="css/jquery.gallery.css">
+<!-- //Custom Theme files -->
+<!-- js -->
+<script src="js/jquery-2.2.3.min.js"></script> 
+<!-- //js -->
+<!-- web-fonts --> 
+<link href="//fonts.googleapis.com/css?family=Cormorant+Upright:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+<!-- //web-fonts --> 
 
 </head>
 <body>
-    <div id="main">  
-            <div id="menubox">  
-                <div id="menu">  
-                    <ul> 
-                    <li><a href="emppanel.html"><- Home</a></li>
-                   </ul>
-                    </div>
+    <div class="w3ls-banner">
+    <div class="w3lsbanner-info">
+			<div class="header">
+				<div class="container">
+					<div class="header-left">
+						<!--<div class="w3layouts-logo">
+							<h1>
+								<a href="index.html">Employee Panel</a>
+							</h1>
+						</div>-->
+					</div>
+					<div class="header-right">
+						<div class="agileinfo-social-grids">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin-in"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<div class="container">
+					<div class="top-nav">
+						<nav class="navbar navbar-default">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li><a class="active list-border" href="emppanel.html">Home</a></li>
+									<li><a href="employeedetails.html">Employee Details</a></li> 
+									<li><a href="EmployeeStatus.html" >Status</a></li> 
+									<li><a href="empperformance.html" >Performance</a></li>
+									<li><a href="emppayroll.html" >Payroll Details </a></li>
+									<li><a href="empresign.html" >Resignation</a></li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>	
+								<div class="clearfix"> </div>
+							</div>	
+						</nav>		
+					</div>
+				</div>
                 </div>
-        </div>
     
-
 	<div class="main">
+
 		<div class="agile-heading">
 			<h1><span class="image"></span><label>E</label>mp<label>l</label>oyee Details</h1>
 		</div>
@@ -196,6 +252,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </div>
 				</form>
 			</div>
+        </div>
+        </div>
 		
 		<div class="agileits_copyright">
 			<p>© 2020 Employee Details Form. All rights reserved | Design & Developed by HRMTeam</p>
@@ -226,5 +284,51 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 		</script>
 	<!-- //End-date-piker -->
+    <!-- jarallax -->  
+	<script src="js/SmoothScroll.min.js"></script> 
+	<script src="js/jarallax.js"></script> 
+	<script type="text/javascript">
+	    /* init Jarallax */
+	    $('.jarallax').jarallax({
+	        speed: 0.5,
+	        imgWidth: 1366,
+	        imgHeight: 768
+	    })
+	</script>  
+	<!-- //jarallax -->  
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>	
+	<script type="text/javascript">
+	    jQuery(document).ready(function ($) {
+	        $(".scroll").click(function (event) {
+	            event.preventDefault();
+
+	            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+	        });
+	    });
+	</script>
+	<!-- //end-smooth-scrolling -->	
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+	    $(document).ready(function () {
+	        /*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+
+	        $().UItoTop({ easingType: 'easeOutQuart' });
+
+	    });
+	</script>
+	<!-- //smooth-scrolling-of-move-up -->  
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
